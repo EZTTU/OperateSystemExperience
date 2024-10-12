@@ -9,12 +9,12 @@ void threadTask(int id, char symbol) {
 }
 
 int main() {
-    create([](int id) { threadTask(id, 'a'); });
-    create([](int id) { threadTask(id, 'b'); });
-    create([](int id) { threadTask(id, 'c'); });
-    create([](int id) { threadTask(id, 'd'); });
+    create([](int id) { threadTask(id, 'H'); });
+    create([](int id) { threadTask(id, 'U'); });
+//    create([](int id) { threadTask(id, 'c'); });
+//    create([](int id) { threadTask(id, 'd'); });
 
     return 0;
 }
 
-// wget -Uri https://jyywiki.cn/pages/OS/2022/demos/thread.h -Outfile thread.h
+// eg: wget -Uri https://jyywiki.cn/pages/OS/2022/demos/thread.h -Outfile thread.h
